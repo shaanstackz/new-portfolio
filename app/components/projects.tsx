@@ -66,16 +66,16 @@ const techIcons: { [key: string]: string } = {
 
 const Projects: React.FC = () => {
     return (
-        <section className="py-12 bg-gray-100">
+        <section className="bg-gray-900 text-white py-20 w-screen">
             <div className="container mx-auto px-4">
                 <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
                         <div key={index} className="bg-white p-6 rounded-lg shadow-md">
-                            <h3 className="text-xl font-semibold mb-2">{project.name}</h3>
+                            <h3 className="text-xl font-semibold mb-2 text-black">{project.name}</h3>
                             <p className="text-gray-700 mb-4">{project.description}</p>
                             <div className="mb-4">
-                                <h4 className="font-semibold">Tech Stack:</h4>
+                                <h4 className="font-semibold text-black">Tech Stack:</h4>
                                 <ul className="list-none flex space-x-2">
                                     {project.techStack.map((tech, techIndex) => (
                                         <li key={techIndex} className="text-gray-600">
