@@ -19,6 +19,8 @@ const paths = {
     vba: '/vba.png',
     csharp: '/csharp.png',
     typescript: '/typescript.png',
+    ttc: '/ttc.png',
+    fgf: '/fgf.png',
 }
  
 export default paths;
