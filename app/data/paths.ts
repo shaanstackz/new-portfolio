@@ -21,6 +21,7 @@ const paths = {
     typescript: '/typescript.png',
     ttc: '/ttc.png',
     fgf: '/fgf.png',
+    microsoft: '/microsoft.png',
 }
  
 export default paths;
