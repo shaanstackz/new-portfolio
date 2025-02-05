@@ -2,7 +2,7 @@ const paths = {
     resume: '',
     me: '/shaan.jpg',
     tmu: '/tmu.jpg',
-    angular: '/angular.png',
+    angular: '/angularjs.png',
     react: '/react.png',
     nodejs: '/nodejs.png',
     mongodb: '/mongodb.png',

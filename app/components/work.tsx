@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useEffect, useRef } from 'react';
 import paths from '../data/paths';
 
 const WorkExperience: React.FC = () => {
@@ -41,22 +43,49 @@ const WorkExperience: React.FC = () => {
         }
     ];
 
+    const sectionRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fadeIn');
+                        entry.target.classList.remove('opacity-0');
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, []);
+
     return (
-        <div className="p-6 bg-gray-100">
+        <div ref={sectionRef} className="bg-gray-900 text-white py-20 w-screen opacity-0 transition duration-500 ease-in-out transform hover:scale-105">
+            <h1 className="text-2xl font-bold mb-6 transition duration-300 ease-in-out transform hover:scale-105">Work Experience</h1>
             {experiences.map((experience, index) => (
-                <div key={index} className="mb-8 p-4 bg-white rounded-lg shadow-md">
+                <div key={index} className="mb-8 p-4 bg-gray-100 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200">
                     <div className="flex items-center mb-4">
-                        <img src={experience.logo} alt={`${experience.company} logo`} className="h-12 w-12 mr-4 object-contain" />
+                        <img src={experience.logo} alt={`${experience.company} logo`} className="h-12 w-12 mr-4 object-contain transition duration-300 ease-in-out transform hover:scale-110" />
                         <div>
-                            <h2 className="text-xl font-bold">{experience.title}</h2>
-                            <h3 className="text-lg text-gray-600">{experience.company}</h3>
+                            <h2 className="text-xl font-bold text-black transition duration-300 ease-in-out transform hover:text-gray-700">{experience.title}</h2>
+                            <h3 className="text-lg text-gray-600 transition duration-300 ease-in-out transform hover:text-gray-700">{experience.company}</h3>
                         </div>
                     </div>
                     <p className="text-sm text-gray-500">{experience.date}</p>
                     <p className="text-sm text-gray-500 mb-4">{experience.location}</p>
                     <ul className="list-disc pl-5 space-y-2">
                         {experience.achievements.map((achievement, i) => (
-                            <li key={i} className="text-gray-700">{achievement}</li>
+                            <li key={i} className="text-gray-700 transition duration-300 ease-in-out transform hover:text-gray-900">{achievement}</li>
                         ))}
                     </ul>
                 </div>

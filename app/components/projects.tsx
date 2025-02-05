@@ -1,4 +1,6 @@
-import React from 'react';
+"use client";
+
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -39,7 +41,7 @@ const projects = [
         name: 'A Healthy Lifestyle',
         description: 'Description for project six.',
         githubLink: 'https://github.com/shaanstackz/A-Healthy-Lifestyle',
-        techStack: ['HTML', 'CSS', 'JavaScript']
+        techStack: ['Python']
     },
     {
         name: 'Flight Reservation System',
@@ -65,13 +67,39 @@ const techIcons: { [key: string]: string } = {
 };
 
 const Projects: React.FC = () => {
+    const sectionRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-fadeIn');
+                        entry.target.classList.remove('opacity-0');
+                    }
+                });
+            },
+            { threshold: 0.1 }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, []);
+
     return (
         <section className="bg-gray-900 text-white py-20 w-screen">
-            <div className="container mx-auto px-4">
-                <h2 className="text-3xl font-bold mb-8 text-center">Projects</h2>
+            <div ref={sectionRef} className="container mx-auto px-4 opacity-0 transition duration-500 ease-in-out transform hover:scale-105">
+                <h2 className="text-3xl font-bold mb-8 text-center transition duration-500 ease-in-out transform hover:scale-110">Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
-                        <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+                        <div key={index} className="bg-white p-6 rounded-lg shadow-md transition duration-500 ease-in-out transform hover:bg-gray-600">
                             <h3 className="text-xl font-semibold mb-2 text-black">{project.name}</h3>
                             <p className="text-gray-700 mb-4">{project.description}</p>
                             <div className="mb-4">
