@@ -37,29 +37,29 @@ const TechStack: React.FC = () => {
                 
                 <h2 className="text-2xl font-bold mb-2 text-center">Languages</h2>
                 <div className="flex flex-wrap gap-2 justify-center">
-                    <img src={paths.javascript} alt="JavaScript" title="JavaScript" className="w-12 h-12 object-contain bg-white p-1 rounded" />
-                    <img src={paths.python} alt="Python" title="Python" className="w-12 h-12 object-contain bg-white p-1 rounded" />
-                    <img src={paths.typescript} alt="TypeScript" title="TypeScript" className="w-12 h-12 object-contain bg-white p-1 rounded" />
-                    <img src={paths.java} alt="Java" title="Java" className="w-12 h-12 object-contain bg-white p-1 rounded" />
-                    <img src={paths.csharp} alt="C#" title="C#" className="w-12 h-12 object-contain bg-white p-1 rounded" />
-                    <img src={paths.rust} alt="Rust" title="Rust" className="w-12 h-12 object-contain bg-white p-1 rounded" />
+                    <img src={paths.javascript} alt="JavaScript" title="JavaScript" className="w-12 h-12 object-contain bg-yellow-400 p-3 rounded-full" />
+                    <img src={paths.python} alt="Python" title="Python" className="w-12 h-12 object-contain bg-blue-500 p-3 rounded-full" />
+                    <img src={paths.typescript} alt="TypeScript" title="TypeScript" className="w-12 h-12 object-contain bg-blue-400 p-3 rounded-full" />
+                    <img src={paths.java} alt="Java" title="Java" className="w-12 h-12 object-contain bg-red-600 p-3 rounded-full" />
+                    <img src={paths.csharp} alt="C#" title="C#" className="w-12 h-12 object-contain bg-purple-600 p-3 rounded-full" />
+                    <img src={paths.rust} alt="Rust" title="Rust" className="w-12 h-12 object-contain bg-gray-700 p-3 rounded-full" />
                 </div>
 
                 <h2 className="text-2xl font-bold mb-2 text-center">Frameworks</h2>
                 <div className="flex flex-wrap gap-2 justify-center">
-                    <img src={paths.angular} alt="Angular" title="Angular" className="w-12 h-12 object-contain bg-white p-1 rounded" />
-                    <img src={paths.react} alt="React" title="React" className="w-12 h-12 object-contain bg-white p-1 rounded" />
-                    <img src={paths.nodejs} alt="Node.js" title="Node.js" className="w-12 h-12 object-contain bg-white p-1 rounded" />
-                    <img src={paths.dotnet} alt=".NET" title=".NET" className="w-12 h-12 object-contain bg-white p-1 rounded" />
+                    <img src={paths.angular} alt="Angular" title="Angular" className="w-12 h-12 object-contain bg-red-500 p-3 rounded-full" />
+                    <img src={paths.react} alt="React" title="React" className="w-12 h-12 object-contain bg-blue-900 p-3 rounded-full" />
+                    <img src={paths.nodejs} alt="Node.js" title="Node.js" className="w-12 h-12 object-contain bg-green-600 p-3 rounded-full" />
+                    <img src={paths.dotnet} alt=".NET" title=".NET" className="w-12 h-12 object-contain bg-purple-700 p-3 rounded-full" />
                 </div>
 
                 <h2 className="text-2xl font-bold mb-2 text-center">Tools</h2>
                 <div className="flex flex-wrap gap-2 justify-center">
-                    <img src={paths.mongodb} alt="MongoDB" title="MongoDB" className="w-12 h-12 object-contain bg-white p-1 rounded" />
-                    <img src={paths.bash} alt="Bash" title="Bash" className="w-12 h-12 object-contain bg-white p-1 rounded" />
-                    <img src={paths.html} alt="HTML" title="HTML" className="w-12 h-12 object-contain bg-white p-1 rounded" />
-                    <img src={paths.css} alt="CSS" title="CSS" className="w-12 h-12 object-contain bg-white p-1 rounded" />
-                    <img src={paths.sql} alt="SQL" title="SQL" className="w-12 h-12 object-contain bg-white p-1 rounded" />
+                    <img src={paths.mongodb} alt="MongoDB" title="MongoDB" className="w-12 h-12 object-contain bg-green-500 p-1 rounded-full" />
+                    <img src={paths.bash} alt="Bash" title="Bash" className="w-12 h-12 object-contain bg-gray-200 p-3 rounded-full" />
+                    <img src={paths.html} alt="HTML" title="HTML" className="w-12 h-12 object-contain bg-orange-500 p-3 rounded-full" />
+                    <img src={paths.css} alt="CSS" title="CSS" className="w-12 h-12 object-contain bg-blue-700 p-3 rounded-full" />
+                    <img src={paths.sql} alt="SQL" title="SQL" className="w-12 h-12 object-contain bg-indigo-600 p-3 rounded-full" />
                 </div>
             </div>
         </div>
