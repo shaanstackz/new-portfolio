@@ -32,7 +32,7 @@ const Education: React.FC = () => {
     }, []);
 
     return (
-        <div className="bg-gray-900 text-white py-20 w-screen">
+        <div className="bg-gray-900 text-white py-20 w-screen" id="education">
             <div ref={sectionRef} className="max-w-4xl mx-auto bg-gray-700 shadow-md rounded-lg p-6 opacity-0 transition duration-500 ease-in-out transform hover:scale-105">
                 <h1 className="text-3xl font-bold mb-6 text-center transition duration-500 ease-in-out transform hover:scale-110">Education</h1>
                 <div className="space-y-4">

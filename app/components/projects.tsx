@@ -94,7 +94,7 @@ const Projects: React.FC = () => {
     }, []);
 
     return (
-        <section className="bg-gray-900 text-white py-20 w-screen">
+        <section className="bg-gray-900 text-white py-20 w-screen" id="projects">
             <div ref={sectionRef} className="container mx-auto px-4 opacity-0 transition duration-500 ease-in-out transform hover:scale-105">
                 <h2 className="text-3xl font-bold mb-8 text-center transition duration-500 ease-in-out transform hover:scale-110">Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

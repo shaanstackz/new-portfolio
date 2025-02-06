@@ -70,7 +70,7 @@ const WorkExperience: React.FC = () => {
     }, []);
 
     return (
-        <div ref={sectionRef} className="bg-gray-900 text-white py-20 w-screen opacity-0 transition duration-500 ease-in-out transform hover:scale-105">
+        <div ref={sectionRef} className="bg-gray-900 text-white py-20 w-screen opacity-0 transition duration-500 ease-in-out transform hover:scale-105" id="experience">
             <h1 className="text-2xl font-bold mb-6 transition duration-300 ease-in-out transform hover:scale-105">Work Experience</h1>
             {experiences.map((experience, index) => (
                 <div key={index} className="mb-8 p-4 bg-gray-100 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200">
