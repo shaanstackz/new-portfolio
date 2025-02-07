@@ -6,6 +6,7 @@ import Work from "./components/work";
 import TechStack from "./components/techstack";
 import Certifications from "./components/certifications";
 import Header from "./components/header";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Work />
       <TechStack />
       <Certifications />
+      <Footer />
     </div>
     
   );
