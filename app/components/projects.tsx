@@ -5,50 +5,63 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import paths from '../data/paths';
+import TechStack from './techstack';
 
 const projects = [
     {
         name: 'StockFlow',
-        description: 'Description for project one.',
+        description: 'Developed a comprehensive full-stack inventory management solution tailored for the food service industry. The application includes real-time inventory tracking, machine learning-driven demand forecasting, and automated reordering capabilities. By streamlining operations, StockFlow has reduced stock shortages by 25%, efficiently manages over 10,000 records, and automatically generates more than 100 invoices each month.',
         githubLink: 'https://github.com/shaanstackz/StockFlow',
         techStack: ['JavaScript', 'Python', 'TypeScript', 'CSS']
     },
     {
+        name: 'TorontoMicro',
+        description: 'Developed a comprehensive full-stack inventory management solution tailored for the food service industry. The application includes real-time inventory tracking, machine learning-driven demand forecasting, and automated reordering capabilities. By streamlining operations, StockFlow has reduced stock shortages by 25%, efficiently manages over 10,000 records, and automatically generates more than 100 invoices each month.',
+        githubLink: '',
+        techStack: ['HTML', 'SQL', 'PHP', 'Angular']
+    },
+    {
         name: 'RoomMate',
-        description: 'Description for project two.',
+        description: 'During the FGF Brands co-op hackathon, our team built RoomMate, an AI-driven tool that automates meeting scheduling and room allocation. Additionally, we developed smart algorithms for email reply suggestions and optimized file management, boosting productivity and simplifying daily workflows.',
         githubLink: 'https://github.com/shaanstackz/FGF-Hackathon',
         techStack: ['Python', 'HTML']
     },
     {
         name: 'Until Dawn Adventure',
-        description: 'Description for project three.',
+        description: 'Designed a dark, horror-themed text-based game inspired by Until Dawn. Players explore an eerie abandoned cabin, making critical choices that shape the storyline and character relationships. Featuring multiple endings and dynamic narratives, every decision impacts your chances of survival.',
         githubLink: 'https://github.com/shaanstackz/until-dawn-like-game',
         techStack: ['Python']
     },
     {
         name: 'War Card Game',
-        description: 'Description for project four.',
+        description: 'Developed a Rust-based card game application inspired by the classic game War. The application features smooth gameplay and user-friendly controls, delivering an engaging and immersive experience as players compete with virtual card decks.',
         githubLink: 'https://github.com/shaanstackz/War-Card',
         techStack: ['Rust']
     },
     {
         name: 'MyTranslate',
-        description: 'Description for project five.',
+        description: 'Improved a basic program that acts as a dictionary for both English and French words. This program has many features, such as translating certain sentences in English into French or Dutch. This program also displays translated sentence, with a comparison of the word count from the translated sentence.',
         githubLink: 'https://github.com/shaanstackz/MyTranslate',
         techStack: ['Python']
     },
     {
         name: 'A Healthy Lifestyle',
-        description: 'Description for project six.',
+        description: 'This program is meant to advise the user on what different important health conditions and which they should increase or decrease. The health conditions include: Headphone Exposure, Step Count, Diets, and overall BMI',
         githubLink: 'https://github.com/shaanstackz/A-Healthy-Lifestyle',
         techStack: ['Python']
     },
     {
         name: 'Flight Reservation System',
-        description: 'Description for project seven.',
+        description: 'Developed a Java-based flight reservation system simulation. The program allows users to reserve or cancel seats, view passenger manifests, and check the status of specific flights, providing a comprehensive and interactive booking experience.',
         githubLink: 'https://github.com/shaanstackz/Flight-Reservation-System',
         techStack: ['Java']
-    }
+    },
+    {
+        name: 'Web Portfolio',
+        description: 'This web portfolio itself where I showcase my skills, work experience, projects, and more!',
+        githubLink: 'https://github.com/shaanstackz/new-portfolio',
+        techStack: ['TypeScript', 'React', 'CSS']
+    },
 ];
 
 const techIcons: { [key: string]: string } = {
@@ -64,6 +77,7 @@ const techIcons: { [key: string]: string } = {
     'C#': paths.csharp,
     'Java': paths.java,
     'SQL': paths.sql,
+    'Angular': paths.angular
 };
 
 const Projects: React.FC = () => {
