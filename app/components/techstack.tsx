@@ -43,6 +43,7 @@ const TechStack: React.FC = () => {
                     <img src={paths.java} alt="Java" title="Java" className="w-12 h-12 object-contain bg-red-600 p-3 rounded-full" />
                     <img src={paths.csharp} alt="C#" title="C#" className="w-12 h-12 object-contain bg-purple-600 p-3 rounded-full" />
                     <img src={paths.rust} alt="Rust" title="Rust" className="w-12 h-12 object-contain bg-gray-700 p-3 rounded-full" />
+                    <img src={paths.php} alt="PHP" title="PHP" className="w-12 h-12 object-contain bg-indigo-700 p-3 rounded-full" />
                 </div>
 
                 <h2 className="text-2xl font-bold mb-2 text-center">Frameworks</h2>
@@ -51,6 +52,7 @@ const TechStack: React.FC = () => {
                     <img src={paths.react} alt="React" title="React" className="w-12 h-12 object-contain bg-blue-900 p-3 rounded-full" />
                     <img src={paths.nodejs} alt="Node.js" title="Node.js" className="w-12 h-12 object-contain bg-green-600 p-3 rounded-full" />
                     <img src={paths.dotnet} alt=".NET" title=".NET" className="w-12 h-12 object-contain bg-purple-700 p-3 rounded-full" />
+                    <img src={paths.tailwind} alt="Tailwind" title="Tailwind" className="w-12 h-12 object-contain bg-blue-700 p-3 rounded-full" />
                 </div>
 
                 <h2 className="text-2xl font-bold mb-2 text-center">Tools</h2>
@@ -60,6 +62,8 @@ const TechStack: React.FC = () => {
                     <img src={paths.html} alt="HTML" title="HTML" className="w-12 h-12 object-contain bg-orange-500 p-3 rounded-full" />
                     <img src={paths.css} alt="CSS" title="CSS" className="w-12 h-12 object-contain bg-blue-700 p-3 rounded-full" />
                     <img src={paths.sql} alt="SQL" title="SQL" className="w-12 h-12 object-contain bg-indigo-600 p-3 rounded-full" />
+                    <img src={paths.automate} alt="Power Automate" title="Power Automate" className="w-12 h-12 object-contain bg-black-600 p-3 rounded-full" />
+                    <img src={paths.bi} alt="Power BI" title="Power BI" className="w-12 h-12 object-contain bg-yellow-600 p-1 rounded-full" />
                 </div>
             </div>
         </div>

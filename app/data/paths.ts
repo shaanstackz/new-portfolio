@@ -22,6 +22,10 @@ const paths = {
     ttc: '/ttc.png',
     fgf: '/fgf.png',
     microsoft: '/microsoft.png',
+    php: '/php.png',
+    automate: '/automate.png',
+    bi: '/bi.png',
+    tailwind: '/tailwind.png',
 }
  
 export default paths;

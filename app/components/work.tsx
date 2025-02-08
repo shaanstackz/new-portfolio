@@ -6,41 +6,48 @@ import paths from '../data/paths';
 const WorkExperience: React.FC = () => {
   const experiences = [
     {
-      title: "Software Engineer Intern",
-      company: "FGF Brands",
-      logo: paths.fgf,
-      date: "May 2024 - Present",
-      location: "North York, ON, Canada",
-      achievements: [
-        "Developed mobile-responsive APIs using .NET for a full-stack web application utilized by bakeries for customer support, asset tracking, inventory management, and order management",
-        "Utilized Kendo UI to build dynamic, interactive front-end components, including data grids, dropdowns, and date pickers, enhancing the user experience and improving form usability",
-        "Designed and implemented custom action controls and features to meet specific business requirements, enhancing user workflows and improving operational efficiency"
-      ]
-    },
-    {
-      title: ".NET Software Developer",
-      company: "FGF Brands",
-      logo: paths.fgf,
-      date: "May 2023 - December 2023",
-      location: "North York, ON, Canada",
-      achievements: [
-        "As a .NET Software Developer at FGF Brands, I excelled in a dynamic role where I played a pivotal part in enhancing production planning processes for multiple bakeries across Canada and the United States...",
-        "Implemented over 15 critical features onto a high-traffic production planning webpage using ASP.NET and SQL Server Management Studio...",
-        "Led the development of a live video wall application with AngularJS, delivering innovative video wall filters..."
-      ]
-    },
-    {
-        title: "Software Developer",
-        company: "Toronto Transit Commission (TTC)",
-        logo: paths.ttc,
-        date: "May 2022 - August 2022",
-        location: "Toronto, ON, Canada",
-        achievements: [
-            "Developed an onboarding program using Microsoft Visual Basic to facilitate the seamless integration of individuals entering and exiting the data center...",
-            "Implemented over 15 new features on the operator web pages of the TTC intranet...",
-            "Contributed to software quality assurance by developing and executing test cases to identify and resolve bugs on various web pages of the TTC intranet..."
+        "title": "Software Engineer Intern",
+        "company": "FGF Brands",
+        "logo": paths.fgf,
+        "date": "May 2024 - Present",
+        "location": "North York, ON, Canada",
+        "achievements": [
+          "Created 15+ mobile-friendly APIs using .NET for a web application supporting bakeries in managing 1,000+ assets, customer interactions, inventory, and orders",
+          "Leveraged Kendo UI to develop 20+ interactive front-end features, including data grids, dropdowns, and date pickers, enhancing functionality across 50+ forms",
+          "Engineered 10+ custom controls and tailored features to address unique business needs, streamlining workflows for teams across 100+ daily operations",
+          "Automated data extraction and transformation processes using SQL and Python, reducing manual workflows by 25% across 50+ forms",
+          "Designed end-to-end ETL pipelines for integrating and processing large datasets from multiple sources",
+          "Integrated dashboards and KPIs into workflows, enhancing decision-making and providing actionable insights for project stakeholders"
         ]
-    }
+    },
+    {
+        "title": ".NET Software Developer",
+        "company": "FGF Brands",
+        "logo": paths.fgf,
+        "date": "May 2023 - December 2023",
+        "location": "North York, ON, Canada",
+        "achievements": [
+          "Utilized ASP.NET and SQL Server Management Studio to introduce over 15 features based on business requirements, improving planning efficiency and user experience across 12 bakeries",
+          "Leveraged C#, SQL Server, and Azure DevOps to integrate over 25 time zone features, aligning scheduling data with regional time zones for accurate, efficient operations in bakeries across Canada and the United States",
+          "Transformed the user interface of a live video wall application using AngularJS, implementing advanced filtering features that enhanced real-time monitoring and improved analytical capabilities for over 50 daily users",
+          "Engineered a C# application that reduced response time for weight deviations, ensuring swift responses to critical situations",
+          "Automated critical workflows, enabling faster responses to deviations, reducing downtime, and aligning solutions with business needs"
+        ]
+    },
+    {
+        "title": "Software Developer",
+        "company": "Toronto Transit Commission (TTC)",
+        "logo": paths.ttc,
+        "date": "May 2022 - August 2022",
+        "location": "Toronto, ON, Canada",
+        "achievements": [
+          "Developed an efficient Microsoft Visual Basic application to facilitate seamless transitions for data centre personnel, improving onboarding processes and ensuring smooth data center operations",
+          "Added over 15 features to TTC web pages using ASP.NET, streamlining maintenance and mainframe operations",
+          "Developed a Python program to enhance onboarding for 10+ co-ops, improving integration speed and effectiveness",
+          "Utilized Jira to track and complete 15+ ASP.NET enhancements, optimizing mainframe operations and maintenance processes",
+          "Contributed to software quality assurance by developing and executing test cases to identify and resolve bugs on various web pages of the TTC intranet"
+        ]
+      }      
   ];
 
   const sectionRef = useRef<HTMLDivElement>(null);

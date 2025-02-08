@@ -60,7 +60,7 @@ const projects = [
         name: 'Web Portfolio',
         description: 'This web portfolio itself where I showcase my skills, work experience, projects, and more!',
         githubLink: 'https://github.com/shaanstackz/new-portfolio',
-        techStack: ['TypeScript', 'React', 'CSS']
+        techStack: ['TypeScript', 'React', 'Tailwind']
     },
 ];
 
@@ -77,7 +77,9 @@ const techIcons: { [key: string]: string } = {
     'C#': paths.csharp,
     'Java': paths.java,
     'SQL': paths.sql,
-    'Angular': paths.angular
+    'Angular': paths.angular,
+    'PHP': paths.php,
+    'Tailwind': paths.tailwind
 };
 
 const Projects: React.FC = () => {
