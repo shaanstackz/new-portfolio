@@ -20,24 +20,37 @@ const Education: React.FC = () => {
             { threshold: 0.1 }
         );
 
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
+        const currentSectionRef = sectionRef.current;
+
+        if (currentSectionRef) {
+            observer.observe(currentSectionRef);
         }
 
         return () => {
-            if (sectionRef.current) {
-                observer.unobserve(sectionRef.current);
+            if (currentSectionRef) {
+                observer.unobserve(currentSectionRef);
             }
         };
     }, []);
 
     return (
         <div className="bg-gray-900 text-white py-20 w-screen" id="education">
-            <div ref={sectionRef} className="max-w-4xl mx-auto bg-gray-700 shadow-md rounded-lg p-6 opacity-0 transition duration-500 ease-in-out transform hover:scale-105">
-                <h1 className="text-3xl font-bold mb-6 text-center transition duration-500 ease-in-out transform hover:scale-110">Education</h1>
+            <div
+                ref={sectionRef}
+                className="max-w-4xl mx-auto bg-gray-700 shadow-md rounded-lg p-6 opacity-0 transition duration-500 ease-in-out transform hover:scale-105"
+            >
+                <h1 className="text-3xl font-bold mb-6 text-center transition duration-500 ease-in-out transform hover:scale-110">
+                    Education
+                </h1>
                 <div className="space-y-4">
                     <div className="p-4 border-b border-gray-600 flex items-center transition duration-500 ease-in-out transform hover:bg-gray-600">
-                        <Image src={paths.tmu} alt="TMU Logo" width={100} height={100} className="mr-4 transition duration-500 ease-in-out transform hover:scale-110" />
+                        <Image
+                            src={paths.tmu}
+                            alt="TMU Logo"
+                            width={100}
+                            height={100}
+                            className="mr-4 transition duration-500 ease-in-out transform hover:scale-110"
+                        />
                         <div>
                             <h2 className="text-xl font-semibold text-white">Bachelor of Science in Computer Science</h2>
                             <p className="text-gray-300">Toronto Metropolitan University - 2020 to 2025</p>

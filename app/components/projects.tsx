@@ -128,7 +128,7 @@ const Projects: React.FC = () => {
                                 </ul>
                             </div>
                             <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="text-gray-900 hover:text-gray-700">
-                                <FontAwesomeIcon icon={faGithub} className="md:w-6 md h-6 w-4 h-4" />
+                                <FontAwesomeIcon icon={faGithub} className="md:w-6 md:h-6 w-4 h-4" />
                             </a>
                         </div>
                     ))}
