@@ -13,8 +13,8 @@ export default function Home() {
       <Header />
       <Hero />
       <Education />
-      <Projects />
       <Work />
+      <Projects />
       <TechStack />
       <Certifications />
       <Footer />
