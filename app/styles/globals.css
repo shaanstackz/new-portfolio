@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fira+Code:wght@400;700&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fira+Code:wght@400;700&family=Press+Start+2P&family=Montserrat:wght@400;700&family=Space+Grotesk:wght@400;700&family=Poppins:wght@400;700&family=Raleway:wght@400;700&family=Audiowide&family=Inter:wght@400;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,12 +7,14 @@
 *{
   outline: 1px solid red !important;
   }
-  */ 
-  .tech-icon {
-    width: 34px;
-    height: 34px;
-    object-fit: scale-down;
+*/ 
+
+.tech-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: scale-down;
 }
+
 @keyframes typing {
   from { width: 0; }
   to { width: 11ch; } /* Adjust the width to match the length of the text */
@@ -30,6 +32,7 @@
   animation: typing 3.5s steps(10, end), blink .75s step-end infinite;
   width: 11ch; /* Adjust the width to match the length of the text */
 }
+
 @keyframes fade {
   0%, 20%, 100% { opacity: 0; }
   10% { opacity: 1; }
@@ -38,7 +41,7 @@
 .disappearing-text span {
   position: absolute;
   opacity: 0;
-  animation: fade 15s infinite; /* Increased duration from 10s to 15s */
+  animation: fade 15s infinite;
 }
 
 .disappearing-text span:nth-child(1) {
@@ -46,19 +49,19 @@
 }
 
 .disappearing-text span:nth-child(2) {
-  animation-delay: 3s; /* Adjusted delay to match the new duration */
+  animation-delay: 3s;
 }
 
 .disappearing-text span:nth-child(3) {
-  animation-delay: 6s; /* Adjusted delay to match the new duration */
+  animation-delay: 6s;
 }
 
 .disappearing-text span:nth-child(4) {
-  animation-delay: 9s; /* Adjusted delay to match the new duration */
+  animation-delay: 9s;
 }
 
 .disappearing-text span:nth-child(5) {
-  animation-delay: 12s; /* Adjusted delay to match the new duration */
+  animation-delay: 12s;
 }
 
 @keyframes fadeIn {
@@ -83,10 +86,31 @@ body {
 .font-pacifico {
   font-family: 'Pacifico', cursive;
 }
+
 .font-fira-code {
   font-family: 'Fira Code', monospace;
 }
 
 .font-press-start-2p {
   font-family: 'Press Start 2P', cursive;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-space-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.font-audiowide {
+  font-family: 'Audiowide', cursive;
 }

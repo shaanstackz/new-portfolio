@@ -84,7 +84,7 @@ const WorkExperience: React.FC = () => {
       id="experience"
     >
       <div className="max-w-6xl mx-auto px-4">
-        <h1 className="text-3xl font-bold mb-8">Work Experience</h1>
+        <h1 className="text-3xl font-bold mb-8 text-center font-montserrat">Work Experience</h1>
         {experiences.map((experience, index) => (
           <div
             key={index}
@@ -97,15 +97,15 @@ const WorkExperience: React.FC = () => {
                 className="h-12 w-12 mr-4 object-contain"
               />
               <div>
-                <h2 className="text-xl font-bold text-black">{experience.title}</h2>
-                <h3 className="text-lg text-gray-600">{experience.company}</h3>
+                <h2 className="text-xl font-bold text-black font-montserrat">{experience.title}</h2>
+                <h3 className="text-lg text-gray-600 font-montserrat">{experience.company}</h3>
               </div>
             </div>
-            <p className="text-sm text-gray-500">{experience.date}</p>
-            <p className="text-sm text-gray-500 mb-4">{experience.location}</p>
+            <p className="text-sm text-gray-500 font-montserrat">{experience.date}</p>
+            <p className="text-sm text-gray-500 mb-4 font-montserrat">{experience.location}</p>
             <ul className="list-disc pl-5 space-y-2">
               {experience.achievements.map((achievement, i) => (
-                <li key={i} className="text-gray-700">
+                <li key={i} className="text-gray-700 font-montserrat">
                   {achievement}
                 </li>
               ))}

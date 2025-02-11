@@ -18,7 +18,7 @@ export default function RootLayout({
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fira+Code:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Fira+Code:wght@400;700&family=Press+Start+2P&family=Montserrat:wght@400;700&family=Space+Grotesk:wght@400;700&family=Poppins:wght@400;700&family=Raleway:wght@400;700&family=Audiowide&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
       </Head>
       <body className={`overflow-y-scroll overflow-x-hidden font-roboto`}>
         {children}
