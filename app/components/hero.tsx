@@ -26,6 +26,18 @@ const Hero: React.FC = () => {
                         <FaLinkedin size={32} />
                     </a>
                 </div>
+
+                {/* View Resume Button */}
+                <div className="mt-8">
+                    <a 
+                        href={paths.resume} 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                    >
+                        View Resume
+                    </a>
+                </div>
             </div>
         </div>
     );

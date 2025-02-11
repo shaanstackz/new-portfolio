@@ -1,5 +1,5 @@
 const paths = {
-    resume: '',
+    resume: '/Shaan_Kohli_Resume.pdf',
     me: '/shaan.jpg',
     tmu: '/tmu.jpg',
     angular: '/angularjs.png',
