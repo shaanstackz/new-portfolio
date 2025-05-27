@@ -6,10 +6,21 @@ import paths from "../data/paths"; // Ensure the paths file contains the correct
 const WorkExperience: React.FC = () => {
   const experiences = [
     {
+      title: "Software Developer",
+      company: "Devant",
+      logo: paths.devant,  
+      date: "May 2025 - Present",
+      location: "London, ON, Canada",
+      achievements: [
+        "Automated manual data processing tasks using Python and Pandas, reducing data preparation time and improving overall accuracy",
+        "Designed and deployed automated Power BI dashboards with dynamic filters and scheduled refresh",
+      ],
+    },
+    {
       title: "Software Engineer Intern",
       company: "FGF Brands",
       logo: paths.fgf,  // Make sure paths.fgf is correctly set
-      date: "May 2024 - Present",
+      date: "May 2024 - May 2025",
       location: "North York, ON, Canada",
       achievements: [
         "Created 15+ mobile-friendly APIs using .NET for a web application supporting bakeries in managing 1,000+ assets, customer interactions, inventory, and orders",

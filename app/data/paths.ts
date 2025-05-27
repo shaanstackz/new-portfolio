@@ -26,6 +26,7 @@ const paths = {
     automate: '/automate.png',
     bi: '/bi.png',
     tailwind: '/tailwind.png',
+    devant: '/devant.png'
 }
  
 export default paths;
