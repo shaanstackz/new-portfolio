@@ -64,7 +64,7 @@ const Certifications: React.FC = () => {
                 </Link>
                 {/* Microsoft AI Fundamentals */}
                 <Link href="https://www.credly.com/badges/bcf5a86d-069c-40fc-b248-828a5649679d/linked_in_profile" className="block">
-                    <div className="bg-gray-200 text-black p-4 rounded shadow-lg border-t border-gray-200 pt-4 flex items-center transition duration-500 ease-in-out transform hover:scale-105 hover:bg-gray-300 cursor-pointer">
+                    <div className="bg-gray-200 text-black p-4 rounded shadow-lg border-t border-gray-200 pt-4 flex items-center transition duration-500 ease-in-out transform hover:scale-105 hover:bg-gray-300 mb-4 cursor-pointer">
                         <Image
                             src={paths.microsoft} 
                             alt="Microsoft AI Fundamentals"
@@ -78,6 +78,25 @@ const Certifications: React.FC = () => {
                             </h3>
                             <p className="text-gray-600">Issued by Microsoft</p>
                             <p className="text-gray-600">Date: February 2025</p> 
+                        </div>
+                    </div>
+                </Link>
+                {/* AWS Cloud Certified Cloud Practitioner */}
+                <Link href="https://www.credly.com/badges/5a297252-8d8a-4fb9-8c77-ad02c9e56bb8/linked_in_profile" className="block">
+                    <div className="bg-gray-200 text-black p-4 rounded shadow-lg border-t border-gray-200 pt-4 flex items-center transition duration-500 ease-in-out transform hover:scale-105 hover:bg-gray-300 cursor-pointer">
+                        <Image
+                            src={paths.aws} 
+                            alt="AWS Certified Cloud Practitioner"
+                            width={48}
+                            height={48}
+                            className="object-contain mr-4 transition duration-500 ease-in-out transform hover:scale-110"
+                        />
+                        <div>
+                            <h3 className="text-xl font-semibold text-blue-600 hover:underline">
+                                AWS Certified Cloud Practitioner
+                            </h3>
+                            <p className="text-gray-600">Issued by Amazon Web Services</p>
+                            <p className="text-gray-600">Date: June 2025</p> 
                         </div>
                     </div>
                 </Link>
