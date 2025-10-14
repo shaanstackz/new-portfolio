@@ -7,13 +7,26 @@ const WorkExperience: React.FC = () => {
   const experiences = [
     {
       title: "Software Developer",
+      company: "Bell",
+      logo: paths.bell,  
+      date: "September 2025 - Present",
+      location: "Toronto, ON, Canada",
+      achievements: [
+        
+      ],
+    },
+    {
+      title: "Software Developer",
       company: "Devant",
       logo: paths.devant,  
-      date: "May 2025 - Present",
+      date: "May 2025 - September 2025",
       location: "London, ON, Canada",
       achievements: [
-        "Automated manual data processing tasks using Python and Pandas, reducing data preparation time and improving overall accuracy",
-        "Designed and deployed automated Power BI dashboards with dynamic filters and scheduled refresh",
+        "Developed and deployed over 10 Python automation scripts to streamline data processing workflows, transform large datasets, and integrate seamlessly with REST APIs for accurate data retrieval",
+        "Integrated 5+ APIs (including CRM APIs) and connected multiple cloud and database sources to build automated, reliable reporting pipelines",
+        "Monitored and enhanced CRM systems by integrating APIs and collecting key customer data to improve reporting precision and business insights",
+        "Built and optimized interactive Power BI dashboards using DAX and Power Query to deliver real-time, actionable insights",
+        "Designed and implemented custom web scrapers to extract, clean, and structure data from diverse online sources for analytics and automation",
       ],
     },
     {

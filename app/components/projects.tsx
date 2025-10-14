@@ -26,12 +26,6 @@ const projects = [
         techStack: ['Python', 'HTML']
     },
     {
-        name: 'Until Dawn Adventure',
-        description: 'Designed a dark, horror-themed text-based game inspired by Until Dawn. Players explore an eerie abandoned cabin, making critical choices that shape the storyline and character relationships. Featuring multiple endings and dynamic narratives, every decision impacts your chances of survival.',
-        githubLink: 'https://github.com/shaanstackz/until-dawn-like-game',
-        techStack: ['Python']
-    },
-    {
         name: 'War Card Game',
         description: 'Developed a Rust-based card game application inspired by the classic game War. The application features smooth gameplay and user-friendly controls, delivering an engaging and immersive experience as players compete with virtual card decks.',
         githubLink: 'https://github.com/shaanstackz/War-Card',

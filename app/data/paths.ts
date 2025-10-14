@@ -27,7 +27,8 @@ const paths = {
     bi: '/bi.png',
     tailwind: '/tailwind.png',
     devant: '/devant.png',
-    aws: '/aws.png'
+    aws: '/aws.png',
+    bell: '/bell.png'
 }
  
 export default paths;
