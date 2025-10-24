@@ -27,7 +27,7 @@ const projects = [
     },
     {
         name: 'TorontoMicro',
-        description: 'Developed a comprehensive full-stack inventory management solution tailored for the food service industry. The application includes real-time inventory tracking, machine learning-driven demand forecasting, and automated reordering capabilities. By streamlining operations, StockFlow has reduced stock shortages by 25%, efficiently manages over 10,000 records, and automatically generates more than 100 invoices each month.',
+        description: 'A customer service web application was created, employing HTML, jQuery, MySQL, and PHP to promote green solutions and reduce stress, frustration, delays, and air pollution. Inspired by observing inefficiencies in order management, I designed the system as a Single Page Application (SPA) using AngularJS, consolidating all functions onto one page. An "Admin Database Mode" feature was also implemented, allowing authorized users to oversee and adjust registered orders with ease.',
         githubLink: '',
         techStack: ['HTML', 'SQL', 'PHP', 'Angular']
     },
