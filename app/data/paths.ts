@@ -28,7 +28,11 @@ const paths = {
     tailwind: '/tailwind.png',
     devant: '/devant.png',
     aws: '/aws.png',
-    bell: '/bell.png'
+    bell: '/bell.png',
+    pandas: '/pandas.png',
+    numpy: '/numpy.png',
+    jupyter: '/jupyter.png',
+    scikit: '/scikit.png'
 }
  
 export default paths;

@@ -8,10 +8,22 @@ import paths from '../data/paths';
 
 const projects = [
     {
+        name: 'RestLab',
+        description: 'building...',
+        githubLink: 'https://github.com/shaanstackz/RestLab',
+        techStack: ['Jupyter', 'Python', 'Pandas', 'Numpy', 'Scikit']
+    },
+    {
+        name: 'CRM Automation Suite',
+        description: 'After seeing how scattered data slowed decision-making across multiple companies, I built the CRM Automation Suite — a lightweight Python system that syncs CRM purchases, generates clean reports, and powers live dashboards automatically. It brings structure, visibility, and real-time insight to any CRM workflow.',
+        githubLink: 'https://github.com/shaanstackz/CRM-Automation-Suite',
+        techStack: ['Python', 'BI', 'Pandas', 'Numpy', 'Scikit']
+    },
+    {
         name: 'StockFlow',
         description: 'Developed a comprehensive full-stack inventory management solution tailored for the food service industry. The application includes real-time inventory tracking, machine learning-driven demand forecasting, and automated reordering capabilities. By streamlining operations, StockFlow has reduced stock shortages by 25%, efficiently manages over 10,000 records, and automatically generates more than 100 invoices each month.',
         githubLink: 'https://github.com/shaanstackz/StockFlow',
-        techStack: ['JavaScript', 'Python', 'TypeScript', 'CSS']
+        techStack: ['JavaScript', 'Python', 'TypeScript', 'CSS', 'Pandas', 'Numpy', 'Scikit']
     },
     {
         name: 'TorontoMicro',
@@ -72,7 +84,12 @@ const techIcons: { [key: string]: string } = {
     'SQL': paths.sql,
     'Angular': paths.angular,
     'PHP': paths.php,
-    'Tailwind': paths.tailwind
+    'Tailwind': paths.tailwind,
+    'BI': paths.bi,
+    'Pandas': paths.pandas,
+    'Numpy': paths.numpy,
+    'Jupyter': paths.jupyter,
+    'Scikit': paths.scikit
 };
 
 const Projects: React.FC = () => {
