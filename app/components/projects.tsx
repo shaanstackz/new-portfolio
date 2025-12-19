@@ -9,7 +9,7 @@ import paths from '../data/paths';
 const projects = [
     {
         name: 'RestLab',
-        description: 'building...',
+        description: 'This project analyzes Apple Health sleep data exported from the Health app and builds a full pipeline around sleep trends, exercise correlations, anomaly detection, HRV/stress insights, and weekly report generation. It combines Python data processing, machine learning, and LLM-powered summaries to create meaningful sleep insights.',
         githubLink: 'https://github.com/shaanstackz/RestLab',
         techStack: ['Jupyter', 'Python', 'Pandas', 'Numpy', 'Scikit']
     },
