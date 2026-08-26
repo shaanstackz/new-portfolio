@@ -12,7 +12,12 @@ const WorkExperience: React.FC = () => {
       date: "September 2025 - Present",
       location: "Toronto, ON, Canada",
       achievements: [
-        
+        "Developed and deployed automation solutions using Power Automate and Playwright, reducing manual touch time and streamlining repetitive operational workflows",
+        "Managed Nginx infrastructure hosting Podman containers that support automated business processes, ensuring reliable execution and availability of production workloads",
+        "Architected and implemented an end-to-end automation workflow spanning multiple teams, integrating on-premises scripts, cloud platforms, databases, and enterprise systems into a unified process",
+        "Designed and developed custom Power Automate connectors for internal APIs, enabling secure and reusable access to enterprise services across the organization",
+        "Integrated Google Gemini into internal automation workflows, leveraging generative AI to improve automation output quality and reduce manual review effort",
+        "Built Power BI control plans and monitoring dashboards for automated processes, providing visibility into automation health, execution status, and operational exceptions",
       ],
     },
     {
